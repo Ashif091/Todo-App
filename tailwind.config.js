@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:()=>({
-        'custom-background':"url('./src/assets/pexels-felix-mittermeier-1146134.jpg')"
+        'custom-background':"url('/src/assets/pexels-felix-mittermeier-1146134.jpg')"
       })
     },
   },
