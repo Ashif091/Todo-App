@@ -10,19 +10,17 @@ function App() {
     todo: string
   }
 
-  const [todos, setTodos] = useState<Todo[] | []>(JSON.parse(localStorage.getItem("todo") as string)||[])
+  const [todos, setTodos] = useState<Todo[] | []>(
+    JSON.parse(localStorage.getItem("todo") as string) || []
+  )
   const [input, setInput] = useState("")
   const [editId, setEditId] = useState(new Date())
   const [isEdit, setEdit] = useState(false)
 
-  useEffect(() => {
 
-  }, []);
-  
   useEffect(() => {
-    localStorage.setItem("todo", JSON.stringify(todos));
-  }, [todos]); 
-  
+    localStorage.setItem("todo", JSON.stringify(todos))
+  }, [todos])
 
   const addTodo = () => {
     if (input.trim() !== "") {
@@ -56,6 +54,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen flex flex-col gap-4 items-center justify-center p-4 bg-custom-background bg-center bg-cover">
+        
         <AddTodo
           addTodo={addTodo}
           input={input}
