@@ -17,7 +17,6 @@ function App() {
   const [editId, setEditId] = useState(new Date())
   const [isEdit, setEdit] = useState(false)
 
-
   useEffect(() => {
     localStorage.setItem("todo", JSON.stringify(todos))
   }, [todos])
@@ -51,10 +50,10 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id))
   }
 
+  
   return (
     <>
       <div className="min-h-screen flex flex-col gap-4 items-center justify-center p-4 bg-custom-background bg-center bg-cover">
-        
         <AddTodo
           addTodo={addTodo}
           input={input}

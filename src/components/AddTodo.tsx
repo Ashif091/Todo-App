@@ -11,7 +11,7 @@ interface Props{
 function AddTodo({inputAdd,input,addTodo,isEdit,editList}:Props) {
   return (
     <>
-      <div className="bg-gray-100 p-6 rounded shadow-md w-full max-w-lg lg:w-2/6">
+      <div className="bg-gray-100 p-6 rounded shadow-md w-full max-w-lg lg:w-2/6 ">
         <h1 className="text-2xl font-bold text-center mb-4">Todo App</h1>
         <div className="flex">
           <input

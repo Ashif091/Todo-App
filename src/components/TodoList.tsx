@@ -10,7 +10,7 @@ interface Props {
 }
 function TodoList({todos, editTodo,removeTodo}: Props) {
   return (
-    <div className="bg-gray-100 w-full md:w-3/4 lg:w-2/6 rounded p-6 shadow-md  ">
+    <div className="bg-gray-100 w-full md:w-3/4 max-w-lg lg:w-2/6 rounded p-6 shadow-md ">
       <ul>
         {todos.map((todo, index) => (
           <li
